@@ -1,14 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+      <nav class="header-nav">
+        <a href=""> 
+          <svg class="header-logo"></svg></a>
+
+        <ul class="header-list">
+          <li class="header-item"><a href="">Інтерактив<svg class="header-nav-arrow"></svg> </a></li>
+          <li class="header-item"><a href="">Наша команда</a></li>
+          <li class="header-item"><a href="">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div><button class="theme-switcher"></button> 
+        <p class="header-greating">Вітаємо, User!</p>
+      </div>
+   
+    </div>
+  </header>
+  <main>
+    <div class="main-title-wrapper">
+  <h1 class="hero-title">Популярні інтерактивні ігри</h1>
+</div>
+<section>
+  <div class="birthday-wrapper">
+  <h2 class="heroh2-title">Перевір в який рік ти народився</h2>
+  <input type="text" name="text" class="search" placeholder="Введіть рік народження"><svg
+    class="search-icon"></svg></input>
+    <p>Ви народилися у високосний рік!</p>
+  </div>
+  </section>
+  <section class="feature">
+    <div class="feature-game-wrapper">
+    <h2 class="feature-title">Вгадай число, яке загадав комп'ютер</h2>
+    <input type="text" name="text" class="search" placeholder="Введіть рік народження" name="text" class="search"
+      placeholder="Введіть рік народження" name="text" class="search" placeholder="Введіть числа"><svg
+      class="search-icon"></svg></input>
+      <p>Вітаю, ви вгадали число! (number)</p>
+    </div>
+  </section>
+  <include src="partials/rock-scissor-paper.html"></include>
+  <!-- <section class="rock-scissor-paper">
+    <div class="container">
+      <h2 class="rock-scissor-paper-title">Камінь - ножиці - папір</h2>
+      <div class="button-box">
+        <button class="rock"></button>
+        <button class="scissor"></button>
+        <button class="paper"></button>
+      </div>
+      <div class="text-box">
+        <p class="rock-scissor-paper-text">Рахунок:</p>
+        <p class="rock-scissor-paper-text">Комп'ютер - <span class="count-1">0</span></p>
+        <p class="rock-scissor-paper-text">ви - <span class="count-2">0</span></p>
+      </div>
+      <p>Ви виграли раунд!</p>
+      <button class="primary-button"></button>
+    </div>
+  </section> -->
+  <section>
+    <h2>Калькулятор</h2>
+    <input type="number">
+    <div>
+      <button type="button"></button>
+      <button type="button"></button>
+      <button type="button"></button>
+      <button type="button"></button>
+      <input type="number">
+      <button type="button"></button>
+      <input type="number">
+    </div>
+  </section>
+  <input>
+    <h2>Калькулятор часу</h2>
+    <input type="number"><svg class="search-icon"></svg></input>
+    <svg class="dots-row-icon"></svg>
+    <p class="time-result"></p>
+  </section>
+  <section><h2>Google динозавр</h2></section>
+  <section><h2>Футбол</h2></section>
+  <section><h2>Введіть 3 числа</h2>
+    <div>
+    <input type="number">
+    <input type="number">
+    <input type="number">
+  </div>
+    <p>Найбільше число, яке ви ввели - (число)</p>
+  </section>
+  <section><h2>Наша команда</h2>
+    <!-- <img src="" alt=""> -->
+    <p>Ім’я студента</p>
+    <p>Інформація про роботу, яку він/вона виконав/ла</p>
+    <div><button type="button"></button>
+      <button type="button"></button>
+      <button type="button"></button>
+    </div>
+  </section>
+  <section>
+    <h2>Обери вченого/их</h2>
+    <div class="sientist-images-box">
+     <!-- тут мають рендеритися картинки -->
+       <!-- створити масив з картинками, потім створити потрібну 
+     кількість img прикріпити до діва sientist-images-box -->
+    </div>
+    <div class="buttons-filter-box">
+     <!-- тут рендеряться кнопки -->
+     <!-- створити масив з текстом, потім стовири потрібну 
+     кількість кнопок дістаючи текст з масиву, 
+     прикріпити до діва з класом buttons-filter-box -->
+    </div>
+
+  </section>
+</main>
+  <!-- <include src="./partials/example.html"></include> -->
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-logo-wrapper">
+      <a href="" class="footer-logo">
+        <svg class="footer-logo-icon"></svg>
+      </a>
+    </div>
+    <div class="footer-info-wrapper">
+      <ul>
+        <li><p>Тел: <a href="tel:+381234567890">+38 (123) 456 78 90</a></p></li>
+      <li><p>E-Mail: <a href="mailto:codingmagic@gmail.com">codingmagic@gmail.com</a></p></li>
+      <li><p>Facebook: <a href="#">CodingMagic</a></p></li>
+      <li><p>Twitter: <a href="#">CodingMagic</a></p></li>
+      <li><p>Instagram: <a href="#">CodingMagic</a></p></li>
+</ul>
+    </div>
+    <div class="footer-subscribe-wrapper">
+      <form >
+        <input type="email">
+        <button class="primary-button">Підписатись</button>
+        <p>*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+      </form>
+    </div>
+    </div>
+    <div class="footer-subscribtion-greating">
+      <!-- до цього діва буде кріпитися модальне вікно з повідомленням про підписку -->
+    </div>
+  </footer>
+</body>
+
 </html>

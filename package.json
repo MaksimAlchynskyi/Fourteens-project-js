@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "fourteens-project-js",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://MaksimAlchynskyi.github.io/fourteens-project-js",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /fourteens-project-js/"
   },
   "repository": {
     "type": "git",
