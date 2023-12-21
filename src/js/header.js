@@ -15,7 +15,6 @@ else {
     if (body.style.backgroundColor = "black")  {
         body.style.backgroundColor = "white";
         p.style.color = "black";
-
     }
 }
 })
