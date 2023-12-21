@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,23 +8,31 @@
   <link rel="stylesheet" href="./sass/index.scss" />
   <script type="module" src="./index.js"></script>
 </head>
+
 <body>
   <include src="partials/header.html"></include>
   <main>
     <div class="main-title-wrapper">
-  <h1 class="hero-title">Популярні інтерактивні ігри</h1>
-</div>
-<include src="partials/birthday.html"></include>
-  <include src="partials/rock-scissor-paper.html"></include>
-  <section>
-    <h2>Google динозавр</h2></section>
-  <section>
-    <h2 class="football-title">Футбол</h2>
-  </section>
-  <include src="partials/3-numbers.html"></include>
-  <include src="partials/our-team.html"> </include>
-</main>
+      <h1 class="hero-title">Популярні інтерактивні ігри</h1>
+    </div>
+    <include src="partials/birthday.html"></include>
+    <include src="partials/rock-scissor-paper.html"></include>
+    <include src="partials/Calculator.html"></include>
+    <section>
+      <h2>Google динозавр</h2>
+    </section>
+    <section>
+      <h2 class="football-title">Футбол</h2>
+      <div class="football-field">
+        <div id="ball"></div>
+      </div>
+      
+    </section>
+    <include src="partials/3-numbers.html"></include>
+    <include src="partials/our-team.html"> </include>
+  </main>
   <include src="partials/footer.html"></include>
   <script src="js/3numbers.js"></script>
 </body>
+
 </html>
