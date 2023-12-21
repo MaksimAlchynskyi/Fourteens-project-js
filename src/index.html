@@ -11,21 +11,27 @@
 
 <body>
   <include src="partials/header.html"></include>
-  <main>
+  <main class="games-container">
     <div class="main-title-wrapper">
 
   <h1 class="hero-title">Популярні інтерактивні ігри</h1>
 </div>
-<section>
   <include src="partials/birthday.html"></include>
-</section>
+
   <include src="partials/rock-scissor-paper.html"></include>
+<include src="partials/Calculator.html" ></include>
   <section>
     <h2>Google динозавр</h2>
     <include src="partials/dino-game.html"></include>
   </section>
   <section>
     <h2 class="football-title">Футбол</h2>
+    <div class="football-section">
+      <div class="football-field">
+        <div class="football"></div>
+      </div>
+    </div>
+
   </section>
   <include src="partials/3-numbers.html"></include>
   <include src="partials/our-team.html"> </include>
@@ -34,6 +40,7 @@
   <include src="partials/footer.html"></include>
  <script src="js/3numbers.js"></script> 
  <script src="js/football.js"></script>
+ <script src="js/Calculator.js"></script>
 
 </body>
 
