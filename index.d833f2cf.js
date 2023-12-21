@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){const t=document.querySelector(".football-field"),e=document.querySelector(".football");t.addEventListener("mousemove",(function(n){let o=t.getBoundingClientRect(),i=n.clientX-o.left,l=n.clientY-o.top;i=Math.max(0,Math.min(i,o.width-e.offsetWidth)),l=Math.max(0,Math.min(l,o.height-e.offsetHeight)),setTimeout((function(){e.style.left=i+"px",e.style.top=l+"px"}))}))}));
+//# sourceMappingURL=index.d833f2cf.js.map
