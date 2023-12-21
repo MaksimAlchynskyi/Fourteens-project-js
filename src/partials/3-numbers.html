@@ -1,9 +1,12 @@
 <section>
   <h2 class="three-numbers-title">Введіть 3 числа</h2>
-    <div class="input-container">
-    <input class="input-number-1 three-numbers-input" placeholder="Введіть число" type="number">
-    <input class="input-number-2 three-numbers-input" placeholder="Введіть число" type="number">
-    <input class="input-number-3 three-numbers-input" placeholder="Введіть число" type="number">
+  <div class="input-container">
+      <input class="input-number-1 three-numbers-input" placeholder="Введіть число" type="number">
+      <input class="input-number-2 three-numbers-input" placeholder="Введіть число" type="number">
+      <input class="input-number-3 three-numbers-input" placeholder="Введіть число" type="number">
   </div>
-    <p class="three-numbers-text">Найбільше число, яке ви ввели - (число)</p>
-  </section>
+  <div class="three-numbers-button-wrapper">
+  <button class="three-numbers-button" onclick="findMaximum()">Знайти максимальне число</button>
+</div>
+  <p class="three-numbers-text">Найбільше число, яке ви ввели - <span id="maxNumber">(число)</span></p>
+</section>

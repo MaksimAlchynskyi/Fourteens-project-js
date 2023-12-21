@@ -34,5 +34,22 @@
     line-height: normal;
     text-align: center;
     padding-bottom: 30px;
-    border-bottom: solid 1px #000; 
+    border-bottom: solid 1px #000;
+}
+
+.three-numbers-button {
+    border-radius: 20px;
+    background: #D7D7D7;
+    text-align: center;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+.three-numbers-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
 }

@@ -1,16 +1,13 @@
 
-function findAndDisplayHighestNumber() {
-    let a = parseFloat(document.getElementById("input-number-1").value);
-    let b = parseFloat(document.getElementById("input-number-2").value);
-    let c = parseFloat(document.getElementById("input-number-3").value);
+function findMaximum() {
+  // Get the input values
+  const number1 = parseFloat(document.querySelector('.input-number-1').value);
+  const number2 = parseFloat(document.querySelector('.input-number-2').value);
+  const number3 = parseFloat(document.querySelector('.input-number-3').value);
 
-    const mostNumber = findHighestNumber(a, b, c);
+  // Find the maximum number
+  const maxNumber = Math.max(number1, number2, number3);
 
- 
-    console.log("Most Number: ", mostNumber);
-  }
-
-  function findHighestNumber(a, b, c) {
-
-    return Math.max(a, b, c);
-  }
+  // Display the result
+  document.getElementById('maxNumber').textContent = maxNumber;
+}
