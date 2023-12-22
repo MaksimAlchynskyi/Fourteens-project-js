@@ -5,6 +5,7 @@ const dinoGame = document.querySelector('.dino-game');
 dinoGame.addEventListener('mousedown', (event) => {
     cactus.style.animation = 'cactusMove 1.5s infinite linear';
     jump();
+    dino.classList.add('dinoRun');
 });
 
 function jump() {
@@ -23,5 +24,6 @@ let isAlive = setInterval(() => {
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140){
         alert('GAME OVER');
         cactus.style.animation = 'none';
+        dino.classList.remove('dinoRun');
     };
 }, 10);
