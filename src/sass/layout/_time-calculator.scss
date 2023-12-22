@@ -1,0 +1,48 @@
+.time-calculator {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.enter-number {
+    border: none;
+    background-color: #D7D7D7;
+    width: 215px;
+    height: 35px;
+    border-radius: 20px;
+    box-shadow: 3px 3px #00000040;
+    padding: 10px 10px 10px 10px;
+}
+
+.search-time {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    margin-left: -35px;
+}
+
+.img-search {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.day-hour-min-sec {
+    font-size: 15px;
+}
+
+.vector {
+    width: 300px;
+}
