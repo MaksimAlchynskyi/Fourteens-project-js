@@ -1,3 +1,8 @@
+.dino-title {
+    display: flex;
+    justify-content: center;
+}
+
 .dino-game {
     width: 600px;
     height: 200px;
@@ -12,8 +17,22 @@
     background-size: 50px 50px;
     position: relative;
     top: 150px;
+    animation: run 0.55s linear;
 }
 
+.dinoRun {
+    animation: dinoRun 0.35s infinite linear;
+}
+
+@keyframes dinoRun {
+    0% {
+        background-image: url(../images/dino-run1.png);
+    }
+
+    100% {
+        background-image: url(../images/dino-run2.png);
+    }
+}
 
 .cactus {
     width: 20px;
