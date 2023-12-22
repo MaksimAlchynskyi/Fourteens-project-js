@@ -1,18 +1,19 @@
-<section>
-  <h2>Калькулятор</h2>
-  <input type="number">
-  <div>
-    <button type="button"></button>
-    <button type="button"></button>
-    <button type="button"></button>
-    <button type="button"></button>
-    <input type="number">
-    <button type="button"></button>
-    <input type="number">
+<section class="calculator-box">
+ 
+  <h2 class="calc-title">Калькулятор</h2>
+  <div class="calculator-wrapper ">
+  <input class="calculator-input" id="operand1" type="number">
+  <div class="buttons-container">
+  
+    <button class="calculator-button" onclick="setOperation('add')" type="button">+</button>
+    <button class="calculator-button" onclick="setOperation('multiply')" type="button">*</button>
+    <button class="calculator-button" onclick="setOperation('subtract')" type="button">-</button>
+    <button class="calculator-button" onclick="setOperation('divide')" type="button">/</button>
   </div>
-<input>
-  <h2>Калькулятор часу</h2>
-  <input type="number"><svg class="search-icon"></svg></input>
-  <svg class="dots-row-icon"></svg>
-  <p class="time-result"></p>
+    <input class="calculator-input" id="operand2" type="number">
+    <button class="calculator-button" onclick="calculateResult()" type="button">=</button>
+    <input class="calculator-input" id="result" type="number" readonly>
+
+  <input class="calculator-input" id="clearButton" type="button" value="Clear" onclick="clearCalculator()">
+  </div>
 </section>
