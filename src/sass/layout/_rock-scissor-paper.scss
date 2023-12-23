@@ -1,0 +1,71 @@
+.rock-scissor-paper {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.rock-scissor-paper-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.game-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.all-box {
+    display: flex;
+    justify-content: center;
+
+}
+
+.text-box {
+    position: absolute;
+    margin-left: 1000px;
+}
+
+.rock,
+.scissor,
+.paper {
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.rock,
+.scissor {
+    margin-right: 40px;
+}
+
+.rock-img,
+.scissor-img,
+.paper-img {
+    padding: 0;
+}
+
+.you-win {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.computer-var {
+    margin: auto;
+    background-color: black;
+    color: white;
+    width: 180px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+}
