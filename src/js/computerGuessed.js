@@ -5,9 +5,6 @@ checkNumberGueseNumberComputerGuesed.addEventListener("click", () => {
   const userInput = document.querySelector(".input-guese-number-computer-guesed").value;
       const randomNumber = Math.floor(Math.random() * 10) + 1; // Генерация случайного числа от 1 до 10
       answerGueseNumberComputerGuesed.style.color = "red";
-      answerGueseNumberComputerGuesed.style.display = "flex"
-      checkNumberGueseNumberComputerGuesed.style.left = "350px";
-      inputCheckNumberGueseNumberComputerGuesed.style.marginLeft = "0";
       if (isNaN(userInput) || userInput < 1 || userInput > 10) {
               answerGueseNumberComputerGuesed.innerHTML = "Будь ласка, введіть число від 1 до 10.";
       } else {

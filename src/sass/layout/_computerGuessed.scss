@@ -1,25 +1,11 @@
-.input-guese-number-computer-guesed {
-    display: inline-flex;
-    padding: 10px 0px 10px 10px;
-    margin-left: 40%;
-    border-radius: 20px;
-    background: #D7D7D7; 
-    text-decoration: none;
-  }
-  .check-number-guese-number-computer-guesed {
-    position: absolute;
-    background: #000;
-    left: 815px;
-    font-size: 30px;
-    border-radius: 0px 20px 20px 0px;
-  }
+
   .text-win-or-lose-guese-number-computer-guesed {
-    display: none;
     margin-left: 20px;
     align-items: center;
   }
   .computerGuessed-div {
     display: flex;
+    justify-content: space-between;
   }
   .computerGuessed {
     display: flex;
@@ -30,3 +16,7 @@
     display: flex;
     justify-content: center;
   }
+  // .input-button-guese-number {
+  //   display: flex;
+  //   align-items: center;
+  // }
