@@ -2,8 +2,15 @@ body {
     padding-right: 175px;
     padding-left: 175px;
    position: relative;
+   background-image: url('../images/back-ground.png');
+   background-repeat: no-repeat;
+   background-size: cover;
 }
-
+main, footer{
+    background-color: #fff;
+    z-index: 1;
+    background-size: 100%;
+}
 // body {
 //     position: absolute;
 //     background-image: url('/src/images/Group\ 141.png'); /* Replace 'your-image-url.jpg' with the actual path to your image */
