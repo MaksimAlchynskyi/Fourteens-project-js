@@ -4,24 +4,21 @@ const a = document.querySelector("a")
 const li = document.querySelector("li")
 const main = document.querySelector("main")
 const footer = document.querySelector("footer")
+const header = document.querySelector("header")
 const inputDarkmodeToggle = document.querySelector(".input-darkmode-toggle")
+const modalContentHeader = document.querySelector(".modal-content-header")
 inputDarkmodeToggle.addEventListener("click", () => {
     if (inputDarkmodeToggle.checked) {
-        if (body.style.backgroundColor = "white") {
-            body.style.backgroundColor = "#1e2125";
-            main.style.backgroundColor = "#1e2125";
-            footer.style.backgroundColor = "#1e2125";
-            // p.style.color = "white";
-            // a.style.color = "white";
-    }
+        footer.classList.toggle("dark-theme");
+        main.classList.toggle("dark-theme");
+        header.classList.toggle("dark-theme");
+        modalContentHeader.classList.toggle("dark-theme");
 }
 else {
-    if (body.style.backgroundColor = "black")  {
-        body.style.backgroundColor = "white";
-        main.style.backgroundColor = "white";
-        footer.style.backgroundColor = "white";
-        p.style.color = "black";
-    }
+    footer.classList.toggle("dark-theme");
+    main.classList.toggle("dark-theme");
+    header.classList.toggle("dark-theme");
+    modalContentHeader.classList.toggle("dark-theme");
 }
 })
 
