@@ -28,6 +28,7 @@ img {
 
 .dropdown-content-items:hover {
     background-color: #f1f1f1;
+    color: black;
 }
 .last-dropdown-child {
     border-radius: 0 0 10px 10px;
@@ -211,4 +212,27 @@ body {
   }
   .modal-content-header.dark-theme {
     background-color: #121212;
+  }
+  .modal.dark-theme {
+    color: #eee;
+    background: #121212;
+  }
+  button.dark-theme {
+    color: #eee;
+    background: #121212;
+  }
+  h2.dark-theme {
+    color: #eee;
+    background: #121212;
+  }
+  p.dark-theme {
+    color: #eee;
+    background: #121212;
+  }
+  a.dark-theme {
+    color: #eee;
+    background: #121212;
+  }
+  .scientist-card.dark-theme {
+    color: #121212;
   }

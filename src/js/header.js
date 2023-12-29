@@ -7,19 +7,29 @@ const footer = document.querySelector("footer")
 const header = document.querySelector("header")
 const inputDarkmodeToggle = document.querySelector(".input-darkmode-toggle")
 const modalContentHeader = document.querySelector(".modal-content-header")
+const buttonsss = document.querySelectorAll("button")
+const hTwos = document.querySelectorAll("h2")
+const pTexts = document.querySelectorAll("p")
+const aTexts = document.querySelectorAll("a")
+const modalFooter = document.querySelector(".modal")
 inputDarkmodeToggle.addEventListener("click", () => {
-    if (inputDarkmodeToggle.checked) {
         footer.classList.toggle("dark-theme");
         main.classList.toggle("dark-theme");
         header.classList.toggle("dark-theme");
         modalContentHeader.classList.toggle("dark-theme");
-}
-else {
-    footer.classList.toggle("dark-theme");
-    main.classList.toggle("dark-theme");
-    header.classList.toggle("dark-theme");
-    modalContentHeader.classList.toggle("dark-theme");
-}
+        modalFooter.classList.toggle("dark-theme");
+        for (let button of buttonsss) {
+            button.classList.toggle("dark-theme")
+        }
+        for (let hTwo of hTwos) {
+            hTwo.classList.toggle("dark-theme")
+        }
+        for (const pText of pTexts) {
+            pText.classList.toggle("dark-theme")
+        }
+        for (const aText of aTexts) {
+            aText.classList.toggle("dark-theme")
+        }
 })
 
     const modalLink = document.querySelector('.modal-link');
