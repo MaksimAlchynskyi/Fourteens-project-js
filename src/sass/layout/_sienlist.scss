@@ -22,4 +22,18 @@
     background: #000;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     color: white;
+    margin-bottom: 20px;
  }
+//  .button-scienlist:nth-child(2n) {
+//     display: flex;
+//  }
+.button-scienlist-list {
+    display: inline-flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+.button-scien9 {
+    margin-left: 25%;
+}
