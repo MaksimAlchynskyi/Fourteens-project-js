@@ -52,31 +52,31 @@ function Play() {
     }
 
     if (choice == "scissors" && pcChoice == "stone") {
-        result.textContent = "Поразка, комп'ютер обрав камінь";
+        result.textContent = "Ви програли";
         pcScoreNum++;
         pcScore.textContent = pcScoreNum;
     } else if (choice == "scissors" && pcChoice == "paper") {
-        result.textContent = "Перемога, комп'ютер обрав папір";
+        result.textContent = "Ви перемогли";
         userScoreNum++;
         userScore.textContent = userScoreNum;
     }
 
     if (choice == "stone" && pcChoice == "paper") {
-        result.textContent = "Поразка, комп'ютер обрав папір";
+        result.textContent = "Ви програли";
         pcScoreNum++
         pcScore.textContent = pcScoreNum;
     } else if (choice == "stone" && pcChoice == "scissors") {
-        result.textContent = "Перемога, комп'ютер обрав ножиці";
+        result.textContent = "Ви перемогли";
         userScoreNum++;
         userScore.textContent = userScoreNum;
     }
 
     if (choice == "paper" && pcChoice == "scissors") {
-        result.textContent = "Поразка, комп'ютер обрав ножиці";
+        result.textContent = "Ви програли";
         pcScoreNum++;
         pcScore.textContent = pcScoreNum;
     } else if (choice == "paper" && pcChoice == "stone") {
-        result.textContent = "Перемога, комп'ютер обрав камінь";
+        result.textContent = "Ви перемогли";
         userScoreNum++;
         userScore.textContent = userScoreNum;
     }
