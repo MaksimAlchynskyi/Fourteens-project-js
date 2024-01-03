@@ -1,34 +1,25 @@
-.football-wrap {
-  margin-bottom: 36px;
-  margin-top: 36px;
+.title-fball {
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 36px 0;
 }
 
-.football-wrapper {
-   padding: 36px 0;
-  
+.wrap-cort {
+  width: 720px;
+  height: 220px; 
+  border-radius: 37px;
+  border: 2px solid #000;
+  background: #5ABB58;
+  margin: 0 auto;
 }
 
-.football-title {
-    text-align: center;
-    margin-bottom: 36px;
+.ball {
+  position: relative;
+  transition: 0.3s ease-in-out;
+  width: 50px;
+  height: 50px;
 }
-
-.football-field {
-    margin: auto;
-    position: relative;
-    width: 720px;
-    height: 220px;
-    border-radius: 37px;
-    border: 2px solid #000;
- 
-    background: #5ABB58;
-  
-  }
-  
-  .football {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-image: url(/src/images/football\ \(1\)\ 1.png);
-    border-radius: 50%;
-  }
