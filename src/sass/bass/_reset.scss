@@ -45,3 +45,11 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
  }
+h1 {
+  display: flex;
+  justify-content: center;
+}
+h1, h2 {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}

@@ -1,9 +1,9 @@
 .time-calculator {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .title {
@@ -45,4 +45,6 @@
 
 .vector {
     width: 300px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
