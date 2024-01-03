@@ -1,22 +1,33 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const footballField = document.querySelector('.football-field');
-  const football = document.querySelector('.football');
+
+const cort = document.querySelector(".wrap-cort")
+
+const ball = document.querySelector(".ball")
 
 
-  footballField.addEventListener('mousemove', function (event) {
-    let rect = footballField.getBoundingClientRect();
+let ballRotate = 0;
 
+let previousX = 0;
 
-    let x = event.clientX - rect.left;
-    let y = event.clientY - rect.top;
+cort.addEventListener("click", ballMove)
 
-  
-    x = Math.max(0, Math.min(x, rect.width - football.offsetWidth));
-    y = Math.max(0, Math.min(y, rect.height - football.offsetHeight));
+function ballMove(a) {
+    if (a.offsetX > previousX) {
+        ballRotate += 45;
+    } else {
+        ballRotate -= 45;
+    }
+    previousX = a.offsetX;
+    ball.style.rotate = `${ballRotate}deg`;
 
-    setTimeout(function () {
-      football.style.left = x + 'px';
-      football.style.top = y + 'px';
-    });
-  });
-});
+    if (a.offsetY > 170) {
+        ball.style.top = `50px`;
+    } else {
+        ball.style.top = `${a.offsetY}px`;
+    }
+
+    if (a.offsetX > 670) {
+        ball.style.left = `50px`;
+    } else {
+        ball.style.left = `${a.offsetX}px`;
+    }
+}

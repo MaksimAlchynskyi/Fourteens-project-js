@@ -1,20 +1,32 @@
-<section class="rock-scissor-paper">
-  <hr class="line" style="background-color: black; height: 1px;  width: 536px">
-  <h2 class="rock-scissor-paper-title">Камінь - ножиці - папір</h2>
-  <div class="all-box">
-    <div class="game-box">
-      <div class="button-box">
-        <button class="rock"><img src="./images/stone.png" alt="" class="rock-img"></button>
-        <button class="scissor"><img src="./images/scissors.png" alt="" class="scissor-img"></button>
-        <button class="paper"><img src="./images/paper.png" alt="" class="paper-img"></button>
+<section id="uba1">
+  <div class="chuvachy">
+      <div class="hr"></div>
+      <h3 class="h3-year4 column">Камінь - ножиці - папір</h3> 
+      <div class="flex-score-cvc">
+          <div>
+              <div class="flex-cvc">
+                  <div class="box-cvc stone" id="stone">
+                      <p class="cvc-text">Камінь</p>
+                  </div>
+                  <div class="box-cvc scissor" id="scissors">
+                    <p class="cvc-text">ножиці</p>
+                      
+                  </div>  
+                  <div class="box-cvc paper" id="paper">
+                      <p class="cvc-text">Бумага</p>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <p>Рахунок</p>
+              <p><span id="usa" class="username">Ви</span> - <span class="userScore">0</span></p>
+              <p><span>Комп'ютер</span> - <span class="pcScore">0</span></p>
+          </div>
       </div>
-      <p class="you-win">Ви виграли раунд!</p>
-      <button class="computer-var">Варіант комп’ютера</button>
-    </div>
-    <div class="text-box">
-      <p class="rock-scissor-paper-text">Рахунок:</p>
-      <p class="rock-scissor-paper-text">Комп'ютер - <span class="count-1">0</span></p>
-      <p class="rock-scissor-paper-text">Ви - <span class="count-2">0</span></p>
-    </div>
+      <h3 class="h3-year4 column result">Результат</h3> 
+      <div class="column">
+          <button type="button" class="btn-cvc" id="play">Підтвердити</button>
+          <button type="button" class="btn-cvc" id="restart">Оновити</button>
+      </div>
   </div>
-</section>
+  </section>
