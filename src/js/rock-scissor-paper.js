@@ -95,5 +95,4 @@ function Restart() {
     result.textContent = "Результат";
 }
 
-document.getElementById("restart").addEventListener("click", Restart);
 document.getElementById("play").addEventListener("click", Play);
